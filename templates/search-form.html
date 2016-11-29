@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+
+<div class="row">
+
+  <div class="col-md-4">
+
+    <h3>Try a Search!</h3>
+    <form action="search" method="POST">
+      <div class="form-group">
+        <label for="keywords">Enter some keywords</label>
+        <input type="text" class="form-control" id="keywords" name="keywords" placeholder="puppy">
+		<br>
+		<br>
+		<label for="keywords">Enter a date range</label>
+		<br>
+		<label for="keywords">Start Day</label>
+		<input type="number" class="form-control" id="startday" name="startday">
+		<label for="keywords">Start Month</label>
+		<input type="number" class="form-control" id="startmonth" name="startmonth">
+		<label for="keywords">Start Year</label>
+		<input type="number" class="form-control" id="startyear" name="startyear">
+			<br>
+			<label for="keywords">End Day</label>
+		<input type="number" class="form-control" id="endday" name="endday">
+		<label for="keywords">End Month</label>
+		<input type="number" class="form-control" id="endmonth" name="endmonth">
+		<label for="keywords">End Year</label>
+		<input type="number" class="form-control" id="endyear" name="endyear">
+      </div>
+      <button type="submit" class="btn btn-default">Search</button>
+    </form>
+  
+  </div>
+
+</div>    
+
+{% endblock %}
